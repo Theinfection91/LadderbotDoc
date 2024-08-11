@@ -22,15 +22,15 @@ The Ladder Bot manages a competitive ladder where teams can challenge each other
   - `<team_name>`: The name of the team to be removed.
 - **Example:** `!remove_team Alpha`
 - **Response:** Confirms removal of the given team.
-- **Permissions:** Admin only
+- **Permissions:** Admin only.
 
 ### 3. Starting the Ladder
 - **Command:** `!start_ladder`
 - **Description:** Initializes the ladder, sorting teams alphabetically and assigning initial ranks.
-- **Parameters:** None
+- **Parameters:** None.
 - **Example:** `!start_ladder`
 - **Response:** Confirms that the ladder has been started and posts the initial standings.
-- **Permissions:** Admin only
+- **Permissions:** Admin only.
 
 ### 4. Challenging a Team
 - **Command:** `!challenge <challenger_team> <team_name>`
@@ -51,42 +51,24 @@ The Ladder Bot manages a competitive ladder where teams can challenge each other
 - **Response:** Updates the ranks and confirms the match result.
 - **Permissions:** Any member of the involved teams can report a win.
 
-### 6. Accepting a Challenge
-- **Command:** `!accept_challenge <team_name>`
-- **Description:** Accepts a pending challenge.
-- **Parameters:**
-  - `<team_name>`: The name of the team accepting the challenge.
-- **Example:** `!accept_challenge Alpha`
-- **Response:** Confirms that the challenge has been accepted and provides instructions for reporting the result.
-- **Permissions:** Any team can accept if a challenge is pending.
-
-### 7. Declining a Challenge
-- **Command:** `!decline_challenge <team_name>`
-- **Description:** Declines a pending challenge, causing rank changes.
-- **Parameters:**
-  - `<team_name>`: The name of the team declining the challenge.
-- **Example:** `!decline_challenge Alpha`
-- **Response:** Updates ranks and confirms that the challenge has been declined.
-- **Permissions:** Any team can decline if a challenge is pending.
-
-### 8. Posting Standings
+### 6. Posting Standings
 - **Command:** `!post_standings`
 - **Description:** Displays the current standings.
-- **Parameters:** None
+- **Parameters:** None.
 - **Example:** `!post_standings`
 - **Response:** Lists the current rankings of all teams.
 - **Permissions:** Any user can post standings if the ladder is running.
 
-### 9. Setting the Standings Channel
+### 7. Setting the Standings Channel
 - **Command:** `!set_standings_channel <#channel>`
 - **Description:** Sets the channel where standings will be posted.
 - **Parameters:**
   - `<#channel>`: The channel where standings will be posted.
 - **Example:** `!set_standings_channel #standings`
 - **Response:** Confirms the new standings channel.
-- **Permissions:** Admin only
+- **Permissions:** Admin only.
 
-### 10. Adjusting Team Rank
+### 8. Adjusting Team Rank
 - **Command:** `!set_rank <team_name> <rank>`
 - **Description:** Manually sets a team's rank.
 - **Parameters:**
@@ -94,56 +76,56 @@ The Ladder Bot manages a competitive ladder where teams can challenge each other
   - `<rank>`: The new rank for the team.
 - **Example:** `!set_rank Alpha 1`
 - **Response:** Updates the team's rank and adjusts other teams' ranks as needed.
-- **Permissions:** Admin only
+- **Permissions:** Admin only.
 
-### 11. Adding a Win
+### 9. Adding a Win
 - **Command:** `!add_win <team_name>`
-- **Description:** Manually adds a win to a team. 
+- **Description:** Manually adds a win to a team.
 - **Parameters:**
   - `<team_name>`: The name of the team to which the win is being added.
 - **Example:** `!add_win Alpha`
 - **Response:** Informs that a win has been added and updates the team's win count.
-- **Permissions:** Admin only
+- **Permissions:** Admin only.
 
-### 12. Subtracting a Win
+### 10. Subtracting a Win
 - **Command:** `!subtract_win <team_name>`
-- **Description:** Manually subtracts a win from a team. 
+- **Description:** Manually subtracts a win from a team.
 - **Parameters:**
   - `<team_name>`: The name of the team from which the win is being subtracted.
 - **Example:** `!subtract_win Alpha`
 - **Response:** Informs that a win has been subtracted and updates the team's win count.
-- **Permissions:** Admin only
+- **Permissions:** Admin only.
 
-### 13. Adding a Loss
+### 11. Adding a Loss
 - **Command:** `!add_loss <team_name>`
-- **Description:** Manually adds a loss to a team. 
+- **Description:** Manually adds a loss to a team.
 - **Parameters:**
   - `<team_name>`: The name of the team to which the loss is being added.
 - **Example:** `!add_loss Alpha`
 - **Response:** Informs that a loss has been added and updates the team's loss count.
-- **Permissions:** Admin only
+- **Permissions:** Admin only.
 
-### 14. Subtracting a Loss
+### 12. Subtracting a Loss
 - **Command:** `!subtract_loss <team_name>`
-- **Description:** Manually subtracts a loss from a team. 
+- **Description:** Manually subtracts a loss from a team.
 - **Parameters:**
   - `<team_name>`: The name of the team from which the loss is being subtracted.
 - **Example:** `!subtract_loss Alpha`
 - **Response:** Informs that a loss has been subtracted and updates the team's loss count.
-- **Permissions:** Admin only
+- **Permissions:** Admin only.
 
-### 15. Ending the Ladder
+### 13. Ending the Ladder
 - **Command:** `!end_ladder`
 - **Description:** Ends the ladder and clears all data.
-- **Parameters:** None
+- **Parameters:** None.
 - **Example:** `!end_ladder`
 - **Response:** Posts final standings, announces winners, and clears all teams and matches.
-- **Permissions:** Admin only
+- **Permissions:** Admin only.
 
-### 16. Show Documentation Link
+### 14. Show Documentation Link
 - **Command:** `!show_help`
 - **Description:** Provides a link to the Ladder Bot's documentation.
-- **Parameters:** None
+- **Parameters:** None.
 - **Example:** `!show_help`
 - **Response:** Provides a GitHub link to the documentation.
-- **Permissions:** Anyone
+- **Permissions:** Anyone.
