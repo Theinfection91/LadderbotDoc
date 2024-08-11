@@ -87,7 +87,43 @@ The Ladder Bot manages a competitive ladder where teams can challenge each other
 - **Response:** Updates the team's rank and adjusts other teams' ranks as needed.
 - **Permissions:** Admin only
 
-### 10. Ending the Ladder
+### 10. Adding a Win
+- **Command:** `!add_win <team_name>`
+- **Description:** Manually adds a win to a team. 
+- **Parameters:**
+  - `<team_name>`: The name of the team to which the win is being added.
+- **Example:** `!add_win Alpha`
+- **Response:** Informs that a win has been added and updates the team's win count.
+- **Permissions:** Admin only
+
+### 11. Subtracting a Win
+- **Command:** `!subtract_win <team_name>`
+- **Description:** Manually subtracts a win from a team. 
+- **Parameters:**
+  - `<team_name>`: The name of the team from which the win is being subtracted.
+- **Example:** `!subtract_win Alpha`
+- **Response:** Informs that a win has been subtracted and updates the team's win count.
+- **Permissions:** Admin only
+
+### 12. Adding a Loss
+- **Command:** `!add_loss <team_name>`
+- **Description:** Manually adds a loss to a team. 
+- **Parameters:**
+  - `<team_name>`: The name of the team to which the loss is being added.
+- **Example:** `!add_loss Alpha`
+- **Response:** Informs that a loss has been added and updates the team's loss count.
+- **Permissions:** Admin only
+
+### 13. Subtracting a Loss
+- **Command:** `!subtract_loss <team_name>`
+- **Description:** Manually subtracts a loss from a team. 
+- **Parameters:**
+  - `<team_name>`: The name of the team from which the loss is being subtracted.
+- **Example:** `!subtract_loss Alpha`
+- **Response:** Informs that a loss has been subtracted and updates the team's loss count.
+- **Permissions:** Admin only
+
+### 14. Ending the Ladder
 - **Command:** `!end_ladder`
 - **Description:** Ends the ladder and clears all data.
 - **Parameters:** None
@@ -95,7 +131,7 @@ The Ladder Bot manages a competitive ladder where teams can challenge each other
 - **Response:** Posts final standings, announces winners, and clears all teams and matches.
 - **Permissions:** Admin only
 
-### 11. Show Documentation Link
+### 15. Show Documentation Link
 - **Command:** `!show_help`
 - **Description:** Provides a link to the Ladder Bot's documentation.
 - **Parameters:** None
