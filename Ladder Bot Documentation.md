@@ -51,6 +51,15 @@ The Ladder Bot manages a competitive ladder where teams can challenge each other
 - **Response:** Confirms the challenge was canceled
 - **Permissions:** Everyone
 
+### ADMIN - Cancelling a Challenge
+- **Command:** `!admin_cancel_challenge <team_name>`
+- **Description:** Cancel the challenge sent out by `team_name`.
+- **Parameters:**
+  - `<team_name>`: The name of the team that sent out a challenge that you want to delete.
+- **Example:** `!admin_cancel_challenge Echo`
+- **Response:** Confirms the challenge was canceled by an Admin
+- **Permissions:** Admins Only
+
 ### Post Challenges
 - **Command:** `!post_challenges`
 - **Description:** Shows all challenges currently on the board.
@@ -67,6 +76,15 @@ The Ladder Bot manages a competitive ladder where teams can challenge each other
 - **Example:** `!report_win Alpha`
 - **Response:** Updates the ranks and confirms the match result.
 - **Permissions:** Any member of the involved teams can report a win.
+
+### ADMIN - Reporting a Win
+- **Command:** `!admin_report_win <winning_team>`
+- **Description:** Reports the result of a match, adjusting ranks accordingly. Admin Only
+- **Parameters:**
+  - `<winning_team>`: The name of the team that won the match.
+- **Example:** `!admin_report_win Delta`
+- **Response:** Updates the ranks and confirms the match result and says it was performed by an Admin/
+- **Permissions:** Admins Only
 
 ### Posting Standings
 - **Command:** `!post_standings`
