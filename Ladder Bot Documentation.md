@@ -1,4 +1,4 @@
-# Ladder Bot Documentation v1.2.1
+# Ladder Bot Documentation v1.2.2
 
 ## Overview
 The Ladder Bot manages a competitive ladder where teams can challenge each other and move up or down the ranks based on match results. This bot handles team registration, match reporting, challenge management, and more.
